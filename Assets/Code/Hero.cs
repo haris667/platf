@@ -48,22 +48,7 @@ public class Hero : MonoBehaviour
         }
     }
     virtual public void Attack() {}
-    virtual public void Move() 
-    {
-        if (Input.GetButton("Horizontal") && status != HeroStatus.attack)
-        {
-            if(status != HeroStatus.jump || isGrounded) status = HeroStatus.move;
-
-            Vector3 tempPos = pos;
-            tempPos.x += speed * Input.GetAxis("Horizontal") * Time.deltaTime;
-            if(tempPos.x < pos.x) FlipX(180f);
-            else FlipX(0);
-
-            pos = tempPos; 
-        }
-        if (Input.GetButton("Jump")) Jump();
-        if (isGrounded && !Input.GetButton("Horizontal")) status = HeroStatus.idle;
-    }
+    virtual public void Move() {}
     public void FlipX(float AngleRotate)
     {  
         transform.rotation = Quaternion.Euler(0, AngleRotate, 0);

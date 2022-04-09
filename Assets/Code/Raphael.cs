@@ -49,6 +49,21 @@ public class Raphael : Hero
             timerSpeedUp = Time.time;
         }
         if (Time.time - timerSpeedUp >= delaySpeedUp / 2) speed = shiftSpeed;
+
+        if (Input.GetButton("Horizontal") && status != HeroStatus.attack)
+        {
+            if(status != HeroStatus.jump || isGrounded) status = HeroStatus.move;
+
+            Vector3 tempPos = pos;
+            tempPos.x += speed * Input.GetAxis("Horizontal") * Time.deltaTime;
+            if(tempPos.x < pos.x) FlipX(180f);
+            else FlipX(0);
+
+            pos = tempPos; 
+        }
+        if (Input.GetButton("Jump")) Jump();
+        if (isGrounded && !Input.GetButton("Horizontal")) status = HeroStatus.idle;
+
         base.Move();
     }
     public Projectile MakeProjectile() 
