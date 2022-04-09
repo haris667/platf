@@ -36,12 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code\Hero.cs" />
-     <Compile Include="Assets\Code\Raphael.cs" />
-     <Compile Include="Assets\Code\Projectile.cs" />
-     <Compile Include="Assets\Code\BoundsCheck.cs" />
      <Compile Include="Assets\AssetStore\Free Pixel Art Hills\Demo\MoveBackground.cs" />
+     <Compile Include="Assets\Code\BoundsCheck.cs" />
+     <Compile Include="Assets\Code\Raphael.cs" />
      <Compile Include="Assets\Code\Ability.cs" />
+     <Compile Include="Assets\Code\Hero.cs" />
+     <Compile Include="Assets\Code\Projectile.cs" />
      <None Include="Assets\AssetStore\Cainos\Pixel Art Platformer - Village Props\Changelog.txt" />
      <None Include="Assets\AssetStore\Hero and Opponents\license.txt" />
      <None Include="Assets\AssetStore\Free Pixel Art Hills\contact.txt" />
