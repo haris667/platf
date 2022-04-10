@@ -66,14 +66,16 @@ public class Hero : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground") isGrounded = false;
     }
-     public void AnimTick()
+
+    public void AnimTick()
     {
         if(status == HeroStatus.move) anim.SetBool("move", true);
         else anim.SetBool("move", false);
 
         if(status == HeroStatus.jump) anim.SetBool("jump", true);
         else anim.SetBool("jump", false);
-  
+
+
         if(status == HeroStatus.attack) anim.SetBool("attack", true);
         else anim.SetBool("attack", false);
         if(status == HeroStatus.attackDown) anim.SetBool("attackDown", true);
