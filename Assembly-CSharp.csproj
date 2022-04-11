@@ -57,9 +57,10 @@
     <Compile Include="Assets\Code\BoundsCheck.cs" />
     <Compile Include="Assets\Code\Raphael.cs" />
     <Compile Include="Assets\Code\Ability.cs" />
+    <Compile Include="Assets\Code\Boris.cs" />
     <Compile Include="Assets\Code\Hero.cs" />
     <Compile Include="Assets\Code\Projectile.cs" />
-    <Compile Include="Assets\Code\Boris.cs" />
+    <Compile Include="Assets\Code\ScenSkript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetStore\Cainos\Pixel Art Platformer - Village Props\Changelog.txt" />
